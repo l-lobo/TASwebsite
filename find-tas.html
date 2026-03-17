@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find TAS | Terra Applied Systems</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .contact-hero { padding-top: calc(var(--space-16) + var(--space-8)); padding-bottom: var(--space-8); }
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-top: var(--space-8); }
+        .info-box { padding: var(--space-6); }
+        .info-box h3 { margin-bottom: var(--space-4); color: var(--clr-primary); }
+        .info-box h4 { margin-top: var(--space-4); margin-bottom: var(--space-2); font-size: 1.1rem; }
+        .info-box p { color: var(--clr-text-muted); margin-bottom: var(--space-2); }
+        @media (max-width: 768px) { .location-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-text">TERRA<span class="logo-accent">APPLIED</span>SYSTEMS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/#who-we-are" class="nav-link">Who We Are</a>
+                <a href="/#what-we-do" class="nav-link">What We Do</a>
+                <a href="/#technology" class="nav-link">Technology</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <a href="find-tas.html" class="btn btn-primary">Find TAS</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact-hero text-center">
+            <div class="container">
+                <span class="section-subtitle fade-in-up">Find TAS</span>
+                <h1 class="section-title fade-in-up delay-1">Global Headquarters</h1>
+                <p class="fade-in-up delay-2" style="max-width: 600px; margin: 0 auto; color: var(--clr-text-muted);">Global leader in gas detection systems based in League City, Texas.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container location-grid">
+                <div class="glass-card info-box">
+                    <h3>Contact Information</h3>
+                    <h4>Phone</h4>
+                    <p><a href="tel:8882561366">+1 888 256 1366</a></p>
+                    <p><em>Call or email for urgent assistance anytime!</em></p>
+                    
+                    <h4>Email</h4>
+                    <p><a href="mailto:INFO@TASYSLLC.COM">INFO@TASYSLLC.COM</a></p>
+                    
+                    <h4>Operating Hours</h4>
+                    <p>Monday - Friday: 8am - 5pm</p>
+                    <p>Deliveries Accepted: 8am - 3pm</p>
+                </div>
+                
+                <div class="glass-card info-box">
+                    <h3>Directions to Facility</h3>
+                    <h4>From I-45</h4>
+                    <p>Exit FM 646. Turn on FM 646 going East. Continue straight over railroad crossing. Take a right onto property just past the FM 270 intersection.</p>
+                    
+                    <h4>From FM 146</h4>
+                    <p>Turn West on FM 646. Look for property entrance just past Lobit Park. If you pass FM 270, you've gone too far.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo">
+                     <span class="logo-text">TERRA<span class="logo-accent">APPLIED</span>SYSTEMS</span>
+                </a>
+                <p class="footer-bio">Quietly innovating industry methods and design one system at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <a href="/#what-we-do">Fenceline Monitoring</a>
+                <a href="/#what-we-do">Leak Detection</a>
+                <a href="/#what-we-do">Systems Engineering</a>
+            </div>
+            <div class="footer-col">
+                <h4>Industries</h4>
+                <a href="/#technology">Oil & Gas</a>
+                <a href="/#technology">Manufacturing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>League City, Texas</p>
+                <p><a href="tel:8882561366">888-256-1366</a></p>
+                <p><a href="mailto:INFO@TASYSLLC.COM">INFO@TASYSLLC.COM</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 TASYSLLC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
