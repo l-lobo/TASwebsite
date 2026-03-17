@@ -580,6 +580,159 @@ img {
     gap: var(--space-4);
 }
 
+/* --- Stats Bar (5 columns) --- */
+.trust-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* --- TAS Approach Section --- */
+.section-intro {
+    color: var(--clr-text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto var(--space-12);
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-4);
+}
+
+.approach-item {
+    background: var(--clr-bg);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.approach-item:hover {
+    border-color: var(--clr-primary);
+    transform: translateY(-6px);
+}
+
+.approach-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--clr-primary);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: var(--space-3);
+}
+
+.approach-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2);
+    color: #fff;
+}
+
+.approach-item p {
+    color: var(--clr-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- Contact Section --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: var(--space-12);
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+}
+
+.contact-info p {
+    color: var(--clr-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-6);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+}
+
+.contact-detail-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--clr-text-muted);
+    font-size: 1rem;
+}
+
+.contact-detail-item a {
+    color: var(--clr-text);
+    font-weight: 500;
+}
+
+.contact-detail-item a:hover {
+    color: var(--clr-primary);
+}
+
+.contact-form {
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--clr-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-md);
+    padding: 0.875rem 1rem;
+    color: var(--clr-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(148, 163, 184, 0.4);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 3px var(--clr-primary-glow);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Phone number in CTA */
+.phone-number {
+    color: var(--clr-text-muted);
+    font-size: 1rem;
+}
+
 /* --- Animations --- */
 .fade-in-up {
     opacity: 0;
@@ -657,8 +810,18 @@ img {
     }
     
     .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-4);
+    }
+
+    .approach-grid {
         grid-template-columns: 1fr 1fr;
-        gap: var(--space-6);
+        gap: var(--space-4);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
     }
     
     .hero-text h1 { font-size: 2.75rem; }

@@ -61,7 +61,23 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
 
-    // 4. Technology Tabs/Items Switching Let's add interactivity
+    // 4. Contact Form Handler
+    window.handleFormSubmit = function(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const success = document.getElementById('form-success');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        setTimeout(() => {
+            e.target.reset();
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+            success.style.display = 'block';
+            setTimeout(() => { success.style.display = 'none'; }, 5000);
+        }, 1000);
+    };
+
+    // 5. Technology Tabs/Items Switching Let's add interactivity
     const techItems = document.querySelectorAll('.tech-item');
     
     techItems.forEach(item => {
